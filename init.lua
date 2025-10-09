@@ -1,6 +1,17 @@
 --vim.g.mapleader = " "
 --vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 
+
+-- Define leader
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Carrega configurações essenciais
+require("core.settings")
+require("core.keymaps")
+
+
+--Arquivos do rocks
 local rocks_config = {
   rocks_path = vim.env.HOME .. "/.local/share/nvim/rocks",
 }
