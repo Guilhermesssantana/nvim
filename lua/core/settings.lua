@@ -16,6 +16,8 @@ o.tabstop = 2
 -- Cursor e aparência
 o.cursorline = true
 o.wrap = false
+
+-- Swapfile
 o.swapfile = false
 
 -- Desativa netrw (plugins de file tree preferem)
@@ -27,3 +29,5 @@ o.ignorecase = true
 o.smartcase = true
 o.incsearch = true
 
+-- Clipboard
+o.clipboard = "unnamedplus"

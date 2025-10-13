@@ -1,7 +1,3 @@
---vim.g.mapleader = " "
---vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
-
-
 -- Define leader
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -9,9 +5,9 @@ vim.g.maplocalleader = " "
 -- Carrega configurações essenciais
 require("core.settings")
 require("core.keymaps")
+require("core.lsp")
 
-
---Arquivos do rocks
+-- Arquivos do rocks
 local rocks_config = {
   rocks_path = vim.env.HOME .. "/.local/share/nvim/rocks",
 }
@@ -35,4 +31,4 @@ local luarocks_cpath = {
 }
 package.cpath = package.cpath .. ";" .. table.concat(luarocks_cpath, ";")
 
-vim.opt.runtimepath:append(vim.fs.joinpath(rocks_config.rocks_path, "lib", "luarocks", "rocks-5.1", "*", "*"))
+vim.opt.runtimepath:append(vim.fs.joinpath(rocks_config.rocks_path, "lib", "luarocks", "rocks-5.1", "rocks.nvim", "*"))
