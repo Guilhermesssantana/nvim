@@ -4,6 +4,7 @@ local servers = {
   denols = {},
   html = {},
   cssls = {},
+  superhtml = {},
 }
 
 for server, settings in pairs(servers) do

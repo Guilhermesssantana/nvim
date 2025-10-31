@@ -2,6 +2,13 @@
 -- Atalhos principais
 
 local map = vim.keymap.set
+-- tentando entender oque esse cara faz.
+map("n", "<leader>g", "<cmd>Fugit2<CR>", { desc = "Abrir Fugit2" })
+
+--preview live 
+map("n", "<leader>lp", "<cmd>LiveServerStart<CR>", { desc = "Iniciar Live Preview" })
+map("n", "<leader>ls", "<cmd>LiveServerStop<CR>", { desc = "Parar Live Preview" })
+
 
 -- Navegação entre janelas
 map("n", "<C-h>", "<C-w>h", {desc = "Window left"})

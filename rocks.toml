@@ -46,6 +46,15 @@ nvim-web-devicons = "0.100"
 catpuccin = "1.11.0"
 "kanagawa.nvim" = "scm"
 
+## live-preview
+"live-preview.nvim" = "0.9.5"
+
+# rocks.toml with rocks-config.nvim installed
+#[plugins."fugit2.nvim".config]
+#width = 100
+#libgit2_path = "libgit2"
+
+
 [config]
 auto_setup = true # executa setup() automaticamente se existir
 colorscheme = "kanagawa"
