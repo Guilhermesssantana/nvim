@@ -20,6 +20,9 @@ o.wrap = false
 -- Swapfile
 o.swapfile = false
 
+o.splitright = true
+o.splitbelow = true
+
 -- Desativa netrw (plugins de file tree preferem)
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1

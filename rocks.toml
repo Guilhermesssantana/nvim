@@ -48,6 +48,7 @@ catpuccin = "1.11.0"
 
 ## live-preview
 "live-preview.nvim" = "0.9.5"
+nvim-surround = "3.1.7"
 
 # rocks.toml with rocks-config.nvim installed
 #[plugins."fugit2.nvim".config]
